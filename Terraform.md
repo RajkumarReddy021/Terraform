@@ -12,7 +12,7 @@ https://github.com/sreenidevopsgroup9/Terraform/
 registry.terraform.io 
 developers.hashicorp.com/terraform.
 ---
-
+## Coomands: 
 ### terraform init : used to install the plugins for terraform. 
 ### terraform validate :  to check syntax. 
 ### terraform apply :  
