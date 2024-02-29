@@ -15,21 +15,21 @@ developers.hashicorp.com/terraform.
 ---
 ## Commands: 
 **terraform init :** used to install the plugins for terraform.  
-*terraform validate:*  to check syntax. 
-*terraform apply :*   
-*terraform plan :* to review your code & what will be provision by  this code.  
-*terraform destroy :* to delete the instance.  
-*aws ec2 list instances | grep -i list* 
-*terraform destroy -auto-approve :* it will not ask permissions for destroying.  
-*terraform apply -auto-approve -var instance_type=t2.large :* to specify the instance type.  
-*terraform output :* to know the created resource deatils mentioned .tf file.  
-*terraform import aws_instance.import_resource <instance_id> :* to import the instance.  
-*env | grep -i aws :* to know the aws secret keys. 
+**terraform validate:**  to check syntax. 
+**terraform apply :**   
+**terraform plan :** to review your code & what will be provision by  this code.  
+**terraform destroy :** to delete the instance.  
+**aws ec2 list instances | grep -i list** 
+**terraform destroy -auto-approve :** it will not ask permissions for destroying.  
+**terraform apply -auto-approve -var instance_type=t2.large :** to specify the instance type.  
+**terraform output :** to know the created resource deatils mentioned .tf file.  
+**terraform import aws_instance.import_resource <instance_id> :** to import the instance.  
+**env | grep -i aws :** to know the aws secret keys. 
 
 ---
 
 ## Input variables: 
-string, number, list, map, boolean.  
+-string, number, list, map, boolean.  
 
 ## output variables : is used to output the variables of aws resources created from terraform or outsode terraform.
 	
