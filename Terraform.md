@@ -6,7 +6,7 @@
 3. code will be in user friendly manner  
  
 ## Download terraform from internet. 
-move to /usr/bin to work anywhere in the machine.  
+- move to /usr/bin to work anywhere in the machine.  
 terraform.io/downloads  
 https://github.com/sreenidevopsgroup9/Terraform/ 
 registry.terraform.io  
