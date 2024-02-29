@@ -32,11 +32,12 @@ developers.hashicorp.com/terraform.
 - string, number, list, map, boolean.  
 
 ## output variables : is used to output the variables of aws resources created from terraform or outsode terraform. 
-	
-	```
+```
 output "ami_id" {
 		value = aws_instance.instance_name.id
 	}
+```
+
 injection of keys from outside: 
 
 	export AWS_ACCESS_KEY_ID="AKIAWPLY3EBZJRRQ2INT"
