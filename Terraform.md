@@ -36,7 +36,7 @@ output "ami_id" {
 	}
 ``` 
 # Create a configuration file with .tf  to work with terraform in a local machine.
-
+```
 	configure.tf:
  provider "aws" {
 
@@ -79,7 +79,7 @@ output "ami_id" {
  ```
 ---
 ## Provider block for providing access_key,sec keys will be taken from env variables 
-	ex:- file.tf (it will take access keys from env). 
+ex:- file.tf (it will take access keys from env). 
 	
 ### Vpc creation: 
 	
