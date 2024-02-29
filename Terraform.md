@@ -84,7 +84,7 @@ ex:- file.tf (it will take access keys from env).
 
 ## Vpc creation: 
 	
-	```
+```
 	resource "aws_vpc" {
 		cidr_block = "10.10.0.0/16"
 		tags = {
@@ -147,7 +147,7 @@ ex:- file.tf (it will take access keys from env).
 	}
 ```
  ---
-```
+ ```
 resource "aws_vpc" "vpc_1" {
   cidr_block = "10.10.0.0/16"
   tags = {
@@ -210,13 +210,10 @@ resource "aws_route_table_association"" "first_public_rtb" {
 			tool = "terraform"
 		}
 	}
-	```
+```
 ---
 
-
- ## file_name.tf : create a file with this extension. 
- 
- 
+## file_name.tf : create a file with this extension. 
  ```
 	resource "aws_instance" "machine-1" {
 		subnet_id = "aws_subnet.subnet-01.id
@@ -253,8 +250,7 @@ resource "aws_route_table_association"" "first_public_rtb" {
 	} 
 	variable "key_name" {}
 	variable "associate_public_ip_address" {}
-	
-	```	
+```	
 ---
 ```
 	variable "ami" {
@@ -331,7 +327,7 @@ ex: if we create a instance manually in aws.
 	output "key_name" } {
 		value = data.aws_instance.fetch-one.key_name 
 	}
-	```
+```
 ---
 ## Backend: used to backup a terraform.tfstate file to cloud
 
@@ -345,7 +341,8 @@ terraform {
 	}
 }
 ```
- ``` vpc.tf: 
+ ```
+#vpc.tf: 
 
 
 resource "aws_vpc" "vpc-001" {
@@ -372,7 +369,7 @@ resource "aws_vpc" "pvc_01" {
 		tool = var.tool
 	}
 	}
-	```
+```
 	
 ``` var.tf:
 variable "cidr_block" {}
@@ -389,7 +386,8 @@ output "department" {
 
 ```
 
-``` s3.tf:
+```
+#s3.tf:
 resource "aws_s3_bucket" "module_s3" {
 	bucket = var.bucket_name
 	tags = {
@@ -475,7 +473,7 @@ resource "aws_instance" "instance_creation" {
 		]
 	}
 	}
-	```
+```
 ---
 ### null-Resource : 
 ```
