@@ -25,8 +25,6 @@ developers.hashicorp.com/terraform.
 *terraform import aws_instance.import_resource <instance_id> :* to import the instance.  
 *env | grep -i aws :* to know the aws secret keys. 
 
-
-
 ## Input variables: 
 string, number, list, map, boolean.  
 
