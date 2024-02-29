@@ -14,7 +14,7 @@ developers.hashicorp.com/terraform.
 
 ---
 ## Commands: 
-*terraform init :* used to install the plugins for terraform.  
+**terraform init :** used to install the plugins for terraform.  
 *terraform validate:*  to check syntax. 
 *terraform apply :*   
 *terraform plan :* to review your code & what will be provision by  this code.  
