@@ -28,8 +28,8 @@ developers.hashicorp.com/terraform.
 
 ---
 
-## Input variables: 
--string, number, list, map, boolean.  
+- ## Input variables: 
+- string, number, list, map, boolean.  
 
 ## output variables : is used to output the variables of aws resources created from terraform or outsode terraform.
 	
