@@ -11,6 +11,7 @@ terraform.io/downloads
 https://github.com/sreenidevopsgroup9/Terraform/
 registry.terraform.io 
 developers.hashicorp.com/terraform.
+
 ---
 ## Commands: 
 *terraform init :* used to install the plugins for terraform.  
@@ -24,6 +25,8 @@ developers.hashicorp.com/terraform.
 *terraform output :* to know the created resource deatils mentioned .tf file.  
 *terraform import aws_instance.import_resource <instance_id> :* to import the instance.  
 *env | grep -i aws :* to know the aws secret keys. 
+
+---
 
 ## Input variables: 
 string, number, list, map, boolean.  
