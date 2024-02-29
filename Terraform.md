@@ -145,7 +145,7 @@ ex:- file.tf (it will take access keys from env).
 			tool = "terraform"
 		}
 	}
-	```
+```
  ---
 ```
 resource "aws_vpc" "vpc_1" {
