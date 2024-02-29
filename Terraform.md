@@ -24,7 +24,7 @@ developers.hashicorp.com/terraform.
 *terraform output :* to know the created resource deatils mentioned .tf file.  
 *terraform import aws_instance.import_resource <instance_id> :* to import the instance.  
 *env | grep -i aws :* to know the aws secret keys. 
----
+
 
 
 ## Input variables: 
