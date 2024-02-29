@@ -1,5 +1,3 @@
-
-
 # Terraform: automatically aws resource creation opensource tool /it can work with multiple cloud paltforms 
 1. uses its own language 
 2. iac : infrastrucutre as a code 
@@ -36,19 +34,7 @@ developers.hashicorp.com/terraform.
 output "ami_id" {
 		value = aws_instance.instance_name.id
 	}
-```
-
-injection of keys from outside: 
-
-	export AWS_ACCESS_KEY_ID="AKIAWPLY3EBZJRRQ2INT"
-	export AWS_SECRET_ACCESS_KEY_ID="086wWuOMIVB0hdhR1n5nNO4OUV4phJZIUzQiYuns"
-	export AWS_REGION="ap-south-1"
- Parameters in the configuration: 
-	access_key  = var.access_key
-	secret_key = var.secret_key
-	region = var.region
- ```
-
+``` 
 # Create a configuration file with .tf  to work with terraform in a local machine.
 
 	configure.tf:
@@ -80,7 +66,17 @@ injection of keys from outside:
         variable "access_key" {}
         variable "secret_key" {}
         variable "region" {}
-		```
+```
+### injection of keys from outside: 
+```
+	export AWS_ACCESS_KEY_ID="AKIAWPLY3EBZJRRQ2INT"
+	export AWS_SECRET_ACCESS_KEY_ID="086wWuOMIVB0hdhR1n5nNO4OUV4phJZIUzQiYuns"
+	export AWS_REGION="ap-south-1"
+ Parameters in the configuration: 
+	access_key  = var.access_key
+	secret_key = var.secret_key
+	region = var.region
+ ```
 ---
 ## Provider block for providing access_key,sec keys will be taken from env variables 
 	ex:- file.tf (it will take access keys from env). 
