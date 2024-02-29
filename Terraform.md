@@ -31,7 +31,7 @@ developers.hashicorp.com/terraform.
 - ## Input variables: 
 - string, number, list, map, boolean.  
 
-## output variables : is used to output the variables of aws resources created from terraform or outsode terraform.
+## output variables : is used to output the variables of aws resources created from terraform or outsode terraform. 
 	
 	```
 output "ami_id" {
@@ -46,10 +46,8 @@ injection of keys from outside:
 	access_key  = var.access_key
 	secret_key = var.secret_key
 	region = var.region
----
- 
-
  ```
+
 # Create a configuration file with .tf  to work with terraform in a local machine.
 
 	configure.tf:
