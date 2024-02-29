@@ -1,3 +1,8 @@
+# A: Apple 
+1. Type: Fruit
+2. Location: On Earth
+3. Best to Eat: Fresh
+
 # Terraform: automatically aws resource creation opensource tool /it can work with multiple cloud paltforms 
 	 uses its own language 
 	 iac : infrastrucutre as a code. 
