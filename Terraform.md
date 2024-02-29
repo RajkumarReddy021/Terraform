@@ -14,15 +14,15 @@ developers.hashicorp.com/terraform.
 ---
 ## Coomands: 
 **terraform init :** used to install the plugins for terraform. 
-### terraform validate :  to check syntax. 
-### terraform apply :  
-### terraform plan : to review your code & what will be provision by  this code. 
-### terraform destroy : to delete the instance. 
-### aws ec2 list instances | grep -i list 
-### terraform destroy -auto-approve : it will not ask permissions for destroying. 
-### terraform apply -auto-approve -var instance_type=t2.large : to specify the instance type. 
-### terraform output : to know the created resource deatils mentioned .tf file. 
-### terraform import aws_instance.import_resource <instance_id> : to import the instance. 
+**terraform validate:**  to check syntax. 
+**terraform apply :**  
+**terraform plan :** to review your code & what will be provision by  this code. 
+**terraform destroy :** to delete the instance. 
+**aws ec2 list instances | grep -i list**
+**terraform destroy -auto-approve :** it will not ask permissions for destroying. 
+**terraform apply -auto-approve -var instance_type=t2.large :** to specify the instance type. 
+**terraform output :** to know the created resource deatils mentioned .tf file. 
+**terraform import aws_instance.import_resource <instance_id> :** to import the instance. 
 
 ---
 
