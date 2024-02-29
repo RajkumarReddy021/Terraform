@@ -1,7 +1,7 @@
  # Terraform: automatically aws resource creation opensource tool /it can work with multiple cloud paltforms 
-	### uses its own language 
-	### iac : infrastrucutre as a code. 
-	### code will be in user friendly manner. 
+	 uses its own language 
+	 iac : infrastrucutre as a code. 
+         code will be in user friendly manner. 
  
 - ## Download terraform from internet.
 	-move to /usr/bin to work anywhere in the machine.
