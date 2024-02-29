@@ -77,11 +77,12 @@ output "ami_id" {
 	secret_key = var.secret_key
 	region = var.region
  ```
----
 ## Provider block for providing access_key,sec keys will be taken from env variables 
 ex:- file.tf (it will take access keys from env). 
-	
-### Vpc creation: 
+
+---
+
+## Vpc creation: 
 	
 	```
 	resource "aws_vpc" {
@@ -145,7 +146,7 @@ ex:- file.tf (it will take access keys from env).
 		}
 	}
 	```
----
+ ---
 ```
 resource "aws_vpc" "vpc_1" {
   cidr_block = "10.10.0.0/16"
