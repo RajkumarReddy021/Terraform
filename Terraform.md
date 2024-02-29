@@ -23,39 +23,35 @@ developers.hashicorp.com/terraform.
 **terraform apply -auto-approve -var instance_type=t2.large :** to specify the instance type.  
 **terraform output :** to know the created resource deatils mentioned .tf file.  
 **terraform import aws_instance.import_resource <instance_id> :** to import the instance.  
-
+**env | grep -i aws :** to know the aws secret keys. 
 ---
 
 ## Input variables: 
-string, number, list, map, boolean. 
-	
+string, number, list, map, boolean.  
+
 ## output variables : is used to output the variables of aws resources created from terraform or outsode terraform.
 	
-	output "ami_id" {
+	```
+output "ami_id" {
 		value = aws_instance.instance_name.id
 	}
-
 injection of keys from outside: 
 
 	export AWS_ACCESS_KEY_ID="AKIAWPLY3EBZJRRQ2INT"
 	export AWS_SECRET_ACCESS_KEY_ID="086wWuOMIVB0hdhR1n5nNO4OUV4phJZIUzQiYuns"
 	export AWS_REGION="ap-south-1"
-
-env | grep -i aws : to know the aws secret keys.
-
-Parameters in the configuration:
+ Parameters in the configuration: 
 	access_key  = var.access_key
 	secret_key = var.secret_key
 	region = var.region
-===============================================
+---
  
 
- ``` Create a configuration file with .tf  to work with terraform in a local machine.
+ ```
+# Create a configuration file with .tf  to work with terraform in a local machine.
 
 	configure.tf:
-		
-
-        provider "aws" {
+ provider "aws" {
 
                 access_key=var.access_key
                 secret_key=var.secret_key
